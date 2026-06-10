@@ -83,13 +83,9 @@ retrieve → grade → { Correct:            generate
 
 Built and tested on a **free-tier Google Colab T4 GPU**.
 
-**Backend model:** `unsloth/Qwen2.5-7B-Instruct-bnb-4bit` (4-bit quantized, ~5.5 GB on disk, ~5.7 GB VRAM) — the pre-quantized checkpoint is loaded directly to avoid the much larger FP16 download.
+**Backend model:** `unsloth/Qwen2.5-7B-Instruct-bnb-4bit` (4-bit quantized, ~5.5 GB on disk, ~5.7 GB VRAM), the pre-quantized checkpoint is loaded directly to avoid the much larger FP16 download.
 
-```bash
-pip install -r requirements.txt
-```
-
-Then open any notebook in Colab. The complete pipeline notebook loads the model, builds the corpus, and runs the experiments from scratch. Tip: set `HF_HOME` to a Google Drive path at session start to persist the model cache across runtime resets.
+The complete pipeline notebook loads the model, builds the corpus, and runs the experiments from scratch. Tip: set `HF_HOME` to a Google Drive path at session start to persist the model cache across runtime resets.
 
 **Core libraries:** LangChain 0.3.x · LangGraph · FAISS-CPU · sentence-transformers · datasets · rank-bm25 · ddgs
 
