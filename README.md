@@ -109,6 +109,4 @@ Two corpora of increasing difficulty are built per experiment from MediaWiki art
 3. Lewis, P., et al. (2020). *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.* NeurIPS 33.
 4. Asai, A., et al. (2024). *Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection.* ICLR 2024.
 
----
 
-*Mehwish Bibi — Istanbul Medipol University. Large Language Models, Final Project (Track 3: Analysis of an Existing Project).*
