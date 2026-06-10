@@ -1,0 +1,25 @@
+# Core orchestration
+langchain>=0.3,<0.4
+langchain-community>=0.3,<0.4
+langgraph==1.0.1
+
+# Local quantized model backend (Qwen2.5-7B-Instruct-bnb-4bit)
+unsloth
+transformers
+bitsandbytes
+accelerate
+
+# Retrieval
+faiss-cpu
+sentence-transformers          # BAAI/bge-small-en-v1.5
+rank-bm25
+
+# Data + web search
+datasets
+ddgs                           # DuckDuckGo (formerly duckduckgo-search)
+
+# Interactive demo
+gradio
+
+# Pin to avoid a known langchain-core version conflict
+langchain-google-genai<2.1
